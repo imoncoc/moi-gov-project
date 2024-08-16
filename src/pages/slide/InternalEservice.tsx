@@ -1,8 +1,19 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { CheckCircleOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 // import { eServiceData } from "./data";
 
-const InternalEservice = ({ title, serviceData, name }) => {
+interface InternalEServiceProps {
+  title: string;
+  serviceData: any;
+  name: string;
+}
+
+const InternalEservice: React.FC<InternalEServiceProps> = ({
+  title,
+  serviceData,
+  name,
+}) => {
   return (
     <div className="my-4 shadow-sm hover:shadow-md rounded">
       <p className="bg-lime-500 text-white text-center py-2 rounded">{title}</p>

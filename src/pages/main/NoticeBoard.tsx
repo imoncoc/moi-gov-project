@@ -1,5 +1,5 @@
 import { CaretRightOutlined, DribbbleOutlined } from "@ant-design/icons";
-import { Button, Tag } from "antd";
+import { Button } from "antd";
 
 const noticeBoard = [
   { title: "G.O.No-332 (Condolence)" },
